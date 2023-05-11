@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val sum = addTwoNumbers(2, 3)
-        findViewById<TextView>(R.id.total).text = sum.toString()
+        findViewById<TextView>(R.id.total).text = "sum= "+ sum.toString()
     }
 
 
