@@ -26,8 +26,8 @@ jobs:
   - name: Upload Test Report
     uses: actions/upload-artifact@v1
     with:
-      name: index.html
-      path: app/build/reports/lint-reports-debug.html
+     name: index.html
+     path: app/build/reports/lint-reports-debug.html
 #  build:
 #    runs-on: ubuntu-latest
 #    steps:
