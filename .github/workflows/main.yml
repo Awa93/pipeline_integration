@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the Code
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Run Lint
-      - uses: ./gradlew lintDebug
+        run: ./gradlew lintDebug
       - name: upload lint report
-      - uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v1
       with:
         name: index.html
         path: app/build/reports/lint-reports-debug.html
