@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: Checkout the Code
       uses: actions/checkout@v2
+    - name: set up JDK 11
+    - uses: actions/setup-java@v2
     - name: Run Lint
       run: ./gradlew lintDebug
     - name: upload lint report
